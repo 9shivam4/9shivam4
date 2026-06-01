@@ -4,7 +4,18 @@
 
 📍 Jaipur, India  
 📧 9shivam4@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/shivamsoni29/)
+🔗 [LinkedIn](https://www.linkedin.com/in/shivamsoni29/)  
+🌐 [Portfolio Landing Page](https://github.com/9shivam4/9shivam4/blob/main/portfolio/index.html)
+
+---
+
+## Portfolio Showcase
+
+| Project | Focus Area | Portfolio URL |
+|---|---|---|
+| Student E-commerce Marketplace | 0→1 E-commerce, PLP/PDP, CRO, A/B Testing | [View Case Study](https://github.com/9shivam4/9shivam4/blob/main/portfolio/student-ecommerce-marketplace.md) |
+| AI-powered ERP/LMS Platform | AI Product, ERP, LMS, Chatbot, Hybrid Grading | [View Case Study](https://github.com/9shivam4/9shivam4/blob/main/portfolio/ai-erp-lms-platform.md) |
+| Device Management System | Platform Product, Asset Tracking, Geo-fencing, Compliance | [View Case Study](https://github.com/9shivam4/9shivam4/blob/main/portfolio/device-management-system.md) |
 
 ---
 
@@ -48,19 +59,9 @@ My strength lies in converting complex business problems into scalable digital p
 
 ## Featured Product Case Studies
 
-### 1. Student E-commerce Marketplace — 0→1 Product Build
+### 1. [Student E-commerce Marketplace — 0→1 Product Build](https://github.com/9shivam4/9shivam4/blob/main/portfolio/student-ecommerce-marketplace.md)
 
 Built a student-facing D2C e-commerce marketplace for school essentials including books, uniforms, stationery, and accessories.
-
-**My Role:** Product Manager owning roadmap, product requirements, storefront configuration, product discovery, PLP/PDP optimization, cross-sell strategy, and go-to-market execution.
-
-**Key Work:**
-- Designed product discovery to checkout journey
-- Owned product taxonomy, filters, tags, collections, and metadata
-- Wrote user stories for checkout edge cases
-- Ran A/B tests on key conversion points
-- Built cross-sell and recommendation logic
-- Tracked GMV, AOV, cart abandonment, CLTV, and repeat purchase rate
 
 **Impact:**
 - Increased parent engagement by **32%**
@@ -71,18 +72,9 @@ Built a student-facing D2C e-commerce marketplace for school essentials includin
 
 ---
 
-### 2. AI-powered ERP/LMS Platform
+### 2. [AI-powered ERP/LMS Platform](https://github.com/9shivam4/9shivam4/blob/main/portfolio/ai-erp-lms-platform.md)
 
 Led a unified Education ERP and LMS platform with an **AI-powered chatbot** and **hybrid grading system** combining AI, peer, and teacher-led grading.
-
-**My Role:** Product Manager responsible for product strategy, requirements, user stories, sprint execution, stakeholder alignment, and KPI tracking.
-
-**Key Work:**
-- Defined ERP/LMS workflows for students, teachers, admins, and institutions
-- Created AI chatbot use cases for academic and operational support
-- Designed hybrid grading workflows
-- Managed Jira sprint backlogs and Agile ceremonies
-- Tracked user engagement, adoption, churn, NPS, and feature usage
 
 **Impact:**
 - Increased user engagement by **40%**
@@ -92,18 +84,9 @@ Led a unified Education ERP and LMS platform with an **AI-powered chatbot** and 
 
 ---
 
-### 3. Device Management System
+### 3. [Device Management System](https://github.com/9shivam4/9shivam4/blob/main/portfolio/device-management-system.md)
 
 Designed a centralized Device Management System with real-time asset tracking, geo-fencing, remote intervention controls, policy enforcement, and compliance reporting.
-
-**My Role:** Product Manager defining epics, user stories, UAT validation, sprint planning, backlog grooming, and stakeholder coordination.
-
-**Key Work:**
-- Designed device enrolment workflows
-- Defined policy enforcement and remote wipe requirements
-- Created compliance reporting workflows
-- Validated requirements through UAT cycles with 5 institutional clients
-- Managed Agile workflows across multiple platforms
 
 **Impact:**
 - Improved compliance monitoring
