@@ -15,11 +15,9 @@
       --muted: #aab3c5;
       --soft: #dbe4ff;
       --gold: #f6c76f;
-      --blue: #8fb7ff;
       --green: #9ef0c1;
       --shadow: 0 24px 80px rgba(0, 0, 0, 0.36);
     }
-
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
@@ -30,7 +28,6 @@
       background: var(--bg);
       color: var(--text);
     }
-
     body::before {
       content: "";
       position: fixed;
@@ -42,7 +39,6 @@
         linear-gradient(135deg, #08090d 0%, #111525 44%, #07080d 100%);
       z-index: -3;
     }
-
     body::after {
       content: "";
       position: fixed;
@@ -54,7 +50,6 @@
       mask-image: linear-gradient(to bottom, rgba(0,0,0,0.95), rgba(0,0,0,0.25));
       z-index: -2;
     }
-
     a { color: inherit; text-decoration: none; }
     .page {
       width: min(1220px, calc(100vw - 44px));
@@ -64,7 +59,6 @@
       grid-template-columns: 0.92fr 1.08fr;
       gap: 20px;
     }
-
     .identity, .content-shell {
       border: 1px solid var(--border);
       background: linear-gradient(145deg, rgba(255,255,255,0.13), rgba(255,255,255,0.055));
@@ -73,15 +67,13 @@
       box-shadow: var(--shadow);
       overflow: hidden;
     }
-
     .identity {
       position: relative;
-      padding: 34px;
+      padding: 30px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
-
     .identity::after {
       content: "";
       position: absolute;
@@ -93,15 +85,13 @@
       background: radial-gradient(circle, rgba(246,199,111,0.22), transparent 68%);
       pointer-events: none;
     }
-
     .nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 14px;
-      margin-bottom: 46px;
+      margin-bottom: 22px;
     }
-
     .logo {
       width: 46px;
       height: 46px;
@@ -113,7 +103,6 @@
       font-weight: 900;
       letter-spacing: -0.06em;
     }
-
     .status {
       color: var(--green);
       font-size: 13px;
@@ -122,7 +111,6 @@
       align-items: center;
       gap: 8px;
     }
-
     .status span {
       width: 8px;
       height: 8px;
@@ -130,96 +118,108 @@
       border-radius: 999px;
       box-shadow: 0 0 18px rgba(158,240,193,0.8);
     }
-
+    .portrait-wrap {
+      position: relative;
+      width: min(260px, 58vw);
+      aspect-ratio: 4 / 5;
+      margin: 0 0 24px;
+      border-radius: 30px;
+      padding: 10px;
+      background: linear-gradient(145deg, rgba(246,199,111,0.42), rgba(143,183,255,0.18), rgba(255,255,255,0.10));
+      border: 1px solid rgba(255,255,255,0.18);
+      box-shadow: 0 24px 70px rgba(0,0,0,0.34);
+      overflow: hidden;
+    }
+    .portrait-wrap::before {
+      content: "";
+      position: absolute;
+      inset: -30%;
+      background: radial-gradient(circle at 20% 10%, rgba(255,255,255,0.16), transparent 32%);
+      pointer-events: none;
+    }
+    .portrait {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: 50% 20%;
+      border-radius: 22px;
+      filter: contrast(1.06) brightness(1.02);
+    }
     .eyebrow {
       color: var(--gold);
       text-transform: uppercase;
       letter-spacing: 0.15em;
       font-size: 12px;
       font-weight: 900;
-      margin-bottom: 18px;
+      margin-bottom: 14px;
     }
-
     h1 {
-      font-size: clamp(42px, 6.3vw, 78px);
+      font-size: clamp(40px, 5.8vw, 72px);
       line-height: 0.92;
       letter-spacing: -0.07em;
-      margin: 0 0 22px;
+      margin: 0 0 18px;
       max-width: 660px;
     }
-
     .lead {
-      font-size: 19px;
+      font-size: 18px;
       color: var(--soft);
       max-width: 620px;
-      margin: 0 0 28px;
+      margin: 0 0 22px;
     }
-
     .actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 32px;
+      gap: 10px;
+      margin-bottom: 24px;
     }
-
     .button {
-      padding: 12px 16px;
+      padding: 11px 15px;
       border-radius: 999px;
       border: 1px solid var(--border);
       font-weight: 900;
       font-size: 14px;
       transition: transform .25s ease, background .25s ease, border .25s ease;
     }
-
     .button:hover {
       transform: translateY(-2px);
       background: rgba(255,255,255,0.12);
       text-decoration: none;
     }
-
     .button.primary {
       background: var(--text);
       color: #111827;
       border-color: var(--text);
     }
-
     .metrics {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-top: 18px;
+      gap: 10px;
+      margin-top: 12px;
     }
-
     .metric-card {
-      padding: 16px;
-      border-radius: 22px;
+      padding: 14px;
+      border-radius: 20px;
       background: rgba(255,255,255,0.075);
       border: 1px solid rgba(255,255,255,0.12);
     }
-
     .metric-card strong {
       display: block;
-      font-size: 27px;
+      font-size: 25px;
       letter-spacing: -0.045em;
     }
-
     .metric-card span {
       color: var(--muted);
-      font-size: 13px;
+      font-size: 12.5px;
     }
-
     .mini-footer {
       color: var(--muted);
       font-size: 13px;
       position: relative;
       z-index: 1;
+      margin-top: 14px;
     }
-
-    .content-shell {
-      position: relative;
-      padding: 0;
-    }
-
+    .content-shell { position: relative; padding: 0; }
     .content-nav {
       position: sticky;
       top: 0;
@@ -232,7 +232,6 @@
       border-bottom: 1px solid var(--border);
       backdrop-filter: blur(18px);
     }
-
     .content-nav a {
       font-size: 13px;
       font-weight: 900;
@@ -241,14 +240,12 @@
       border-radius: 999px;
       border: 1px solid transparent;
     }
-
     .content-nav a:hover {
       color: var(--text);
       border-color: var(--border);
       background: rgba(255,255,255,0.08);
       text-decoration: none;
     }
-
     .scroll-area {
       height: 100%;
       overflow-y: auto;
@@ -256,11 +253,9 @@
       scroll-snap-type: y proximity;
       padding: 0 22px 22px;
     }
-
     .scroll-area::-webkit-scrollbar { width: 10px; }
     .scroll-area::-webkit-scrollbar-track { background: rgba(255,255,255,0.04); }
     .scroll-area::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.18); border-radius: 999px; }
-
     .section {
       scroll-snap-align: start;
       padding: 46px 4px 26px;
@@ -269,27 +264,18 @@
       flex-direction: column;
       justify-content: center;
     }
-
     h2 {
       font-size: clamp(30px, 4vw, 48px);
       line-height: 1.02;
       letter-spacing: -0.055em;
       margin: 0 0 18px;
     }
-
     .section-copy {
       color: var(--soft);
       font-size: 18px;
       max-width: 720px;
     }
-
-    .card-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-      margin-top: 22px;
-    }
-
+    .card-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 22px; }
     .card {
       background: var(--panel);
       border: 1px solid var(--border);
@@ -297,13 +283,11 @@
       padding: 24px;
       transition: transform .28s ease, background .28s ease, border .28s ease;
     }
-
     .card:hover {
       transform: translateY(-3px);
       background: var(--panel-strong);
       border-color: rgba(246,199,111,0.34);
     }
-
     .tag {
       display: inline-block;
       color: var(--gold);
@@ -313,33 +297,14 @@
       font-weight: 900;
       margin-bottom: 10px;
     }
-
-    h3 {
-      margin: 0 0 10px;
-      font-size: 24px;
-      letter-spacing: -0.035em;
-    }
-
+    h3 { margin: 0 0 10px; font-size: 24px; letter-spacing: -0.035em; }
     p { margin-top: 0; }
     .muted { color: var(--muted); }
     .highlight { color: var(--gold); font-weight: 900; }
     ul { margin: 12px 0 0; padding-left: 18px; color: var(--soft); }
     li { margin-bottom: 8px; }
-
-    .link {
-      display: inline-flex;
-      margin-top: 14px;
-      font-weight: 900;
-      color: var(--gold);
-    }
-
-    .pill-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 22px;
-    }
-
+    .link { display: inline-flex; margin-top: 14px; font-weight: 900; color: var(--gold); }
+    .pill-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
     .pill {
       border: 1px solid var(--border);
       background: rgba(255,255,255,0.07);
@@ -349,24 +314,9 @@
       font-weight: 800;
       font-size: 14px;
     }
-
-    .timeline {
-      display: grid;
-      gap: 14px;
-      margin-top: 22px;
-    }
-
-    .timeline-item {
-      border-left: 2px solid rgba(246,199,111,0.44);
-      padding: 3px 0 3px 18px;
-    }
-
-    .contact-card {
-      display: grid;
-      gap: 12px;
-      margin-top: 22px;
-    }
-
+    .timeline { display: grid; gap: 14px; margin-top: 22px; }
+    .timeline-item { border-left: 2px solid rgba(246,199,111,0.44); padding: 3px 0 3px 18px; }
+    .contact-card { display: grid; gap: 12px; margin-top: 22px; }
     .contact-row {
       padding: 16px;
       border: 1px solid var(--border);
@@ -374,23 +324,25 @@
       background: rgba(255,255,255,0.07);
       color: var(--soft);
     }
-
+    @media (max-height: 820px) and (min-width: 901px) {
+      .portrait-wrap { width: 190px; margin-bottom: 16px; }
+      h1 { font-size: 48px; }
+      .lead { font-size: 16px; margin-bottom: 16px; }
+      .metrics { grid-template-columns: 1fr 1fr; }
+      .metric-card { padding: 10px 12px; }
+      .metric-card strong { font-size: 20px; }
+    }
     @media (max-width: 900px) {
       body { overflow: auto; }
-      .page {
-        width: min(100vw - 24px, 760px);
-        height: auto;
-        margin: 12px auto;
-        grid-template-columns: 1fr;
-      }
+      .page { width: min(100vw - 24px, 760px); height: auto; margin: 12px auto; grid-template-columns: 1fr; }
       .identity { min-height: 94vh; }
       .content-shell { min-height: auto; }
       .scroll-area { height: auto; overflow: visible; scroll-snap-type: none; }
       .section { min-height: auto; padding: 44px 4px; }
       .content-nav { position: sticky; top: 0; }
+      .portrait-wrap { width: min(280px, 78vw); }
       .metrics { grid-template-columns: 1fr 1fr; }
     }
-
     @media (max-width: 520px) {
       .identity { padding: 24px; }
       .metrics { grid-template-columns: 1fr; }
@@ -406,6 +358,10 @@
         <div class="nav">
           <div class="logo">SS</div>
           <div class="status"><span></span>Open to PM roles</div>
+        </div>
+
+        <div class="portrait-wrap">
+          <img id="profilePhoto" class="portrait" alt="Shivam Soni portrait" />
         </div>
 
         <div class="eyebrow">AI Product Manager Portfolio</div>
@@ -459,37 +415,21 @@
               <span class="tag">0→1 E-commerce</span>
               <h3>Student E-commerce Marketplace</h3>
               <p class="muted">Built a D2C storefront for school essentials including books, uniforms, stationery, and accessories with optimized discovery, checkout, and cross-sell flows.</p>
-              <ul>
-                <li><span class="highlight">32%</span> parent engagement uplift</li>
-                <li><span class="highlight">24%</span> cart abandonment reduction</li>
-                <li><span class="highlight">19%</span> browse-to-buy conversion improvement</li>
-                <li><span class="highlight">18%</span> repeat purchase rate</li>
-              </ul>
+              <ul><li><span class="highlight">32%</span> parent engagement uplift</li><li><span class="highlight">24%</span> cart abandonment reduction</li><li><span class="highlight">19%</span> browse-to-buy conversion improvement</li><li><span class="highlight">18%</span> repeat purchase rate</li></ul>
               <a class="link" href="https://github.com/9shivam4/9shivam4/blob/main/portfolio/student-ecommerce-marketplace.md">Read full case study →</a>
             </article>
-
             <article class="card">
               <span class="tag">AI + Education Platform</span>
               <h3>AI-powered ERP/LMS Platform</h3>
               <p class="muted">Led a unified education platform with AI chatbot support, hybrid grading, attendance, fees, assignments, and communication workflows.</p>
-              <ul>
-                <li><span class="highlight">40%</span> user engagement improvement</li>
-                <li><span class="highlight">70%</span> manual grading effort reduction</li>
-                <li>Improved institutional operational visibility</li>
-              </ul>
+              <ul><li><span class="highlight">40%</span> user engagement improvement</li><li><span class="highlight">70%</span> manual grading effort reduction</li><li>Improved institutional operational visibility</li></ul>
               <a class="link" href="https://github.com/9shivam4/9shivam4/blob/main/portfolio/ai-erp-lms-platform.md">Read full case study →</a>
             </article>
-
             <article class="card">
               <span class="tag">Platform Product</span>
               <h3>Device Management System</h3>
               <p class="muted">Designed device enrolment, real-time tracking, geo-fencing, remote intervention, policy enforcement, and compliance reporting workflows.</p>
-              <ul>
-                <li>Improved compliance monitoring</li>
-                <li>Reduced operational misuse</li>
-                <li><span class="highlight">20%</span> sprint predictability improvement</li>
-                <li>Validated with <span class="highlight">5</span> institutional clients</li>
-              </ul>
+              <ul><li>Improved compliance monitoring</li><li>Reduced operational misuse</li><li><span class="highlight">20%</span> sprint predictability improvement</li><li>Validated with <span class="highlight">5</span> institutional clients</li></ul>
               <a class="link" href="https://github.com/9shivam4/9shivam4/blob/main/portfolio/device-management-system.md">Read full case study →</a>
             </article>
           </div>
@@ -499,18 +439,9 @@
           <div class="eyebrow">03 / Product Writing</div>
           <h2>Documentation is how product thinking becomes execution.</h2>
           <div class="card-grid">
-            <article class="card">
-              <h3>PRD Library</h3>
-              <p class="muted">Structured product requirement documents for checkout optimization, AI chatbot workflows, ERP/LMS modules, device management, and analytics dashboards.</p>
-            </article>
-            <article class="card">
-              <h3>KPI Frameworks</h3>
-              <p class="muted">AARRR metrics, GMV, AOV, cart abandonment, CLTV, NPS, churn, feature adoption, and funnel diagnostics for product decision-making.</p>
-            </article>
-            <article class="card">
-              <h3>Execution Playbooks</h3>
-              <p class="muted">MVP roadmaps, sprint backlogs, user stories, acceptance criteria, UAT flows, GTM checklists, and stakeholder alignment templates.</p>
-            </article>
+            <article class="card"><h3>PRD Library</h3><p class="muted">Structured product requirement documents for checkout optimization, AI chatbot workflows, ERP/LMS modules, device management, and analytics dashboards.</p></article>
+            <article class="card"><h3>KPI Frameworks</h3><p class="muted">AARRR metrics, GMV, AOV, cart abandonment, CLTV, NPS, churn, feature adoption, and funnel diagnostics for product decision-making.</p></article>
+            <article class="card"><h3>Execution Playbooks</h3><p class="muted">MVP roadmaps, sprint backlogs, user stories, acceptance criteria, UAT flows, GTM checklists, and stakeholder alignment templates.</p></article>
           </div>
         </section>
 
@@ -526,26 +457,10 @@
           <div class="eyebrow">05 / Experience</div>
           <h2>Experience across product, growth, and business execution.</h2>
           <div class="timeline">
-            <div class="timeline-item">
-              <h3>Product Consultant — Independent</h3>
-              <p class="muted">Jul 2025 – Present</p>
-              <p>Designing PRDs, user flows, MVP roadmaps, and KPI frameworks for structured product development and faster go-to-market execution.</p>
-            </div>
-            <div class="timeline-item">
-              <h3>Product Manager — Mafatlal Industries Ltd.</h3>
-              <p class="muted">May 2023 – Jun 2025 | Mumbai, India</p>
-              <p>Led product strategy and execution across e-commerce, AI-enabled ERP/LMS, and device management platforms, driving ₹200Cr+ revenue impact and 25% market share growth.</p>
-            </div>
-            <div class="timeline-item">
-              <h3>Integrated Marketing Executive — Bizz Boost Media</h3>
-              <p class="muted">Jan 2020 – Aug 2021 | Jaipur, India</p>
-              <p>Ran Instagram and Facebook campaigns using engagement analytics to improve targeting, content strategy, campaign ROI, reach, and conversion.</p>
-            </div>
-            <div class="timeline-item">
-              <h3>Product Management Intern — Amul GCMMF</h3>
-              <p class="muted">May 2022 – Jul 2022 | Jaipur, India</p>
-              <p>Conducted consumer research, supported product positioning, and collaborated with sales, marketing, and logistics teams on rollout execution.</p>
-            </div>
+            <div class="timeline-item"><h3>Product Consultant — Independent</h3><p class="muted">Jul 2025 – Present</p><p>Designing PRDs, user flows, MVP roadmaps, and KPI frameworks for structured product development and faster go-to-market execution.</p></div>
+            <div class="timeline-item"><h3>Product Manager — Mafatlal Industries Ltd.</h3><p class="muted">May 2023 – Jun 2025 | Mumbai, India</p><p>Led product strategy and execution across e-commerce, AI-enabled ERP/LMS, and device management platforms, driving ₹200Cr+ revenue impact and 25% market share growth.</p></div>
+            <div class="timeline-item"><h3>Integrated Marketing Executive — Bizz Boost Media</h3><p class="muted">Jan 2020 – Aug 2021 | Jaipur, India</p><p>Ran Instagram and Facebook campaigns using engagement analytics to improve targeting, content strategy, campaign ROI, reach, and conversion.</p></div>
+            <div class="timeline-item"><h3>Product Management Intern — Amul GCMMF</h3><p class="muted">May 2022 – Jul 2022 | Jaipur, India</p><p>Conducted consumer research, supported product positioning, and collaborated with sales, marketing, and logistics teams on rollout execution.</p></div>
           </div>
         </section>
 
@@ -561,5 +476,15 @@
       </main>
     </section>
   </div>
+  <script>
+    fetch('assets/profile-photo.b64')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('profilePhoto').src = 'data:image/jpeg;base64,' + data.trim();
+      })
+      .catch(() => {
+        document.getElementById('profilePhoto').style.display = 'none';
+      });
+  </script>
 </body>
 </html>
